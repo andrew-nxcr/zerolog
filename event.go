@@ -243,6 +243,26 @@ func (e *Event) Op(op string) *Event {
 	return e.Str("op", op)
 }
 
+func (e *Event) CustomerId(customerId string) *Event {
+	return e.Str("customerId", customerId)
+}
+
+func (e *Event) SubscriptionId(subscriptionId string) *Event {
+	return e.Str("subscriptionId", subscriptionId)
+}
+
+func (e *Event) VehicleId(vehicleId string) *Event {
+	return e.Str("vehicleId", vehicleId)
+}
+
+func (e *Event) StatementId(statementId string) *Event {
+	return e.Str("statementId", statementId)
+}
+
+func (e *Event) PaymentId(paymentId string) *Event {
+	return e.Str("paymentId", paymentId)
+}
+
 // Str adds the field key with val as a string to the *Event context.
 func (e *Event) Str(key, val string) *Event {
 	if e == nil {
