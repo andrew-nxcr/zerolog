@@ -239,6 +239,10 @@ func (e *Event) EmbedObject(obj LogObjectMarshaler) *Event {
 	return e
 }
 
+func (e *Event) Op(op string) *Event {
+	return e.Str("op", op)
+}
+
 // Str adds the field key with val as a string to the *Event context.
 func (e *Event) Str(key, val string) *Event {
 	if e == nil {

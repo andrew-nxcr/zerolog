@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/rs/xid"
-	"github.com/rs/zerolog"
-	"github.com/rs/zerolog/hlog/internal/mutil"
-	"github.com/rs/zerolog/log"
+	"github.com/andrew-nxcr/xid"
+	"github.com/andrew-nxcr/zerolog"
+	"github.com/andrew-nxcr/zerolog/hlog/internal/mutil"
+	"github.com/andrew-nxcr/zerolog/log"
 )
 
 // FromRequest gets the logger in the request's context.

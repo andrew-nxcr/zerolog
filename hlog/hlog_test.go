@@ -1,3 +1,4 @@
+//go:build go1.7
 // +build go1.7
 
 package hlog
@@ -13,9 +14,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/rs/xid"
-	"github.com/rs/zerolog"
-	"github.com/rs/zerolog/internal/cbor"
+	"github.com/andrew-nxcr/xid"
+	"github.com/andrew-nxcr/zerolog"
+	"github.com/andrew-nxcr/zerolog/internal/cbor"
 )
 
 func decodeIfBinary(out *bytes.Buffer) string {
