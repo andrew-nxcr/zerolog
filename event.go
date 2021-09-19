@@ -243,6 +243,10 @@ func (e *Event) Op(op string) *Event {
 	return e.Str("op", op)
 }
 
+func (e *Event) Route(route string) *Event {
+	return e.Str("route", route)
+}
+
 func (e *Event) CustomerId(customerId string) *Event {
 	return e.Str("customerId", customerId)
 }
